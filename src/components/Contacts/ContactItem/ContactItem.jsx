@@ -5,7 +5,7 @@ export const ListItem = ({ contacts, deleteContact }) => {
   return contacts.map(({ id, name, number }) => (
     <Item key={id}>
       <Thumb>
-        <p>{name}</p>
+        <p>{name}: </p>
         <p>{number}</p>
       </Thumb>
       <Button type="button" onClick={() => deleteContact(id)}>
@@ -20,7 +20,7 @@ ListItem.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      number: PropTypes.number.isRequired,
+      number: PropTypes.string.isRequired,
     })
   ).isRequired,
   deleteContact: PropTypes.func.isRequired,

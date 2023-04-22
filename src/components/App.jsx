@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Container } from './Layout/Container.styled';
 import { GlobalStyle } from './Layout/GlobalStyle';
+import { Container } from './Layout/Container.styled';
 import { ContactFilter } from './Contacts/ContactFilter/ContactFilter';
 import { ContactForm } from './Contacts/ContactForm/ContactForm';
 import { ContactList } from './Contacts/ContactList/ContactList';
